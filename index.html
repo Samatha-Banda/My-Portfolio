@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samatha Banda – Portfolio</title>
+    <!-- External CSS linked here -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="blobs-container">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="nav-logo">SB.</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" data-i18n="nav_home">Home</a></li>
+            <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+            <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+            <li><a href="#internships" data-i18n="nav_internships">Internships</a></li>
+            <li><a href="#certs" data-i18n="nav_certs">Certificates</a></li>
+            <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+        <div class="nav-controls">
+            <div class="lang-switcher">
+                <button class="lang-btn active" onclick="setLang('en')">EN</button>
+                <button class="lang-btn" onclick="setLang('te')">TE</button>
+                <button class="lang-btn" onclick="setLang('hi')">HI</button>
+            </div>
+            <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme"></button>
+            <button class="hamburger" onclick="toggleMobileMenu()">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home" onclick="closeMobileMenu()" data-i18n="nav_home">Home</a>
+        <a href="#skills" onclick="closeMobileMenu()" data-i18n="nav_skills">Skills</a>
+        <a href="#projects" onclick="closeMobileMenu()" data-i18n="nav_projects">Projects</a>
+        <a href="#internships" onclick="closeMobileMenu()" data-i18n="nav_internships">Internships</a>
+        <a href="#certs" onclick="closeMobileMenu()" data-i18n="nav_certs">Certificates</a>
+        <a href="#contact" onclick="closeMobileMenu()" data-i18n="nav_contact">Contact</a>
+    </div>
+
+    <main>
+
+        <!-- HERO -->
+        <section id="home">
+            <div class="hero-content">
+                <div class="hero-badge fade-in">
+                    <div class="badge-dot"></div>
+                    <span data-i18n="badge">Available for Internships & Fresher Roles</span>
+                </div>
+                <h1 class="hero-name fade-in fade-in-d1">
+                    <span data-i18n="hi">Hi, I'm</span><br />
+                    <span>Samatha Banda</span>
+                </h1>
+                <p class="hero-role fade-in fade-in-d2" data-i18n="role">Web Developer & Java Full Stack Developer</p>
+                <p class="hero-bio fade-in fade-in-d3" data-i18n="bio">
+                    <!--  /* B.Tech IT undergraduate at KITS Huzurabad with a passion for building meaningful digital solutions.
+                    Quick
+                    learner, collaborative team player, and driven to grow in Web Development and Java full stack */ -->
+                    B.Tech Information Technology undergraduate with a strong passion for designing and developing
+                    impactful digital solutions. Interested in Java Full Stack Development and Web Technologies, with a
+                    focus on building clean, efficient, and user-friendly applications. A quick learner with strong
+                    problem-solving skills, adaptable mindset, and a collaborative approach. Continuously exploring new
+                    technologies and improving skills to grow as a professional software developer.
+                </p>
+                <div class="hero-btns fade-in fade-in-d4">
+                    <a href="#projects" class="btn-primary" data-i18n="btn_work">View My Work ↓</a>
+                    <a href="#contact" class="btn-ghost" data-i18n="btn_contact">Get In Touch</a>
+                </div>
+                <div class="hero-links fade-in fade-in-d5">
+                    <a href="mailto:bandasamatha07@gmail.com" class="hero-link">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0l-9.75 6.75L2.25 6.75" />
+                        </svg>
+                        bandasamatha07@gmail.com
+                    </a>
+                    <a href="https://linkedin.com/in/samatha-banda-606649339" target="_blank" class="hero-link">
+                        <svg fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.27c-.97 0-1.75-.79-1.75-1.76s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.76-1.75 1.76zm13.5 11.27h-3v-5.5c0-1.31-.47-2.2-1.64-2.2-.9 0-1.43.6-1.67 1.18-.09.21-.11.51-.11.81v5.71h-3s.04-9.27 0-10h3v1.42c.4-.62 1.11-1.5 2.7-1.5 1.97 0 3.44 1.29 3.44 4.06v6.02z" />
+                        </svg>
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual fade-in fade-in-d2">
+                <div class="avatar-wrap">
+                    <img src="my-pic.jpg.png" alt="Samatha Banda" class="profile-img" />
+                    <div class="avatar-ring"></div>
+                </div>
+                <div class="stat-pills">
+                    <div class="stat-pill"><strong>8.7</strong> <span data-i18n="cgpa">CGPA</span></div>
+                    <div class="stat-pill"><strong>2</strong> <span data-i18n="internships_stat">Internships</span>
+                    </div>
+                    <div class="stat-pill"><strong>3</strong> <span data-i18n="projects_stat">Projects</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills">
+            <div class="section-header scroll-reveal">
+                <div class="section-eyebrow" data-i18n="s_skills_eye">Technical Arsenal</div>
+                <h2 class="section-title" data-i18n="s_skills">Skills & Technologies</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card scroll-reveal">
+                    <div class="skill-icon">☕</div>
+                    <div class="skill-name">Java</div>
+                </div>
+                <div class="skill-card scroll-reveal">
+                    <div class="skill-icon">🐍</div>
+                    <div class="skill-name">Python</div>
+                </div>
+                <div class="skill-card scroll-reveal">
+                    <div class="skill-icon">🌐</div>
+                    <div class="skill-name">HTML5</div>
+                </div>
+                <div class="skill-card scroll-reveal">
+                    <div class="skill-icon">🎨</div>
+                    <div class="skill-name">CSS3</div>
+                </div>
+                <div class="skill-card scroll-reveal">
+                    <div class="skill-icon">⚡</div>
+                    <div class="skill-name">JavaScript</div>
+                </div>
+                <div class="skill-card scroll-reveal">
+                    <div class="skill-icon">🅲</div>
+                    <div class="skill-name">C Language</div>
+                </div>
+                <div class="skill-card scroll-reveal">
+                    <div class="skill-icon">🌿</div>
+                    <div class="skill-name">Flask</div>
+                </div>
+                <div class="skill-card scroll-reveal">
+                    <div class="skill-icon">🌱</div>
+                    <div class="skill-name">Spring Boot</div>
+                </div>
+                <div class="skill-card scroll-reveal">
+                    <div class="skill-icon">🗄️</div>
+                    <div class="skill-name">MySQL</div>
+                </div>
+                <div class="skill-card scroll-reveal">
+                    <div class="skill-icon">🍃</div>
+                    <div class="skill-name">MongoDB</div>
+                </div>
+                <div class="skill-card scroll-reveal">
+                    <div class="skill-icon">🔧</div>
+                    <div class="skill-name">Git</div>
+                </div>
+                <div class="skill-card scroll-reveal">
+                    <div class="skill-icon">🕷️</div>
+                    <div class="skill-name">BeautifulSoup</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects">
+            <div class="section-header scroll-reveal">
+                <div class="section-eyebrow" data-i18n="s_proj_eye">What I've Built</div>
+                <h2 class="section-title" data-i18n="s_projects">Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card scroll-reveal">
+                    <div class="project-icon">🏛️</div>
+                    <h3 class="project-title" data-i18n="p1_title">Government Scheme Hub</h3>
+                    <p class="project-desc" data-i18n="p1_desc">Centralized platform aggregating government schemes via
+                        web
+                        scraping with eligibility-based recommendations. Features user authentication and responsive UI
+                        for
+                        non-technical users.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Flask</span>
+                        <span class="project-tag">MongoDB</span>
+                        <span class="project-tag">HTML/CSS/JS</span>
+                        <span class="project-tag">BeautifulSoup</span>
+                    </div>
+                </div>
+                <div class="project-card scroll-reveal">
+                    <div class="project-icon">⚡</div>
+                    <h3 class="project-title" data-i18n="p2_title">Green Energy Marketplace</h3>
+                    <p class="project-desc" data-i18n="p2_desc">Dynamic e-commerce platform for green energy solutions
+                        with
+                        real-time data integration. Led a team of 4, handling frontend/backend integration and project
+                        coordination.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">HTML</span>
+                        <span class="project-tag">CSS</span>
+                        <span class="project-tag">JavaScript</span>
+                        <span class="project-tag">MySQL</span>
+                    </div>
+                </div>
+                <div class="project-card scroll-reveal">
+                    <div class="project-icon">🎙️</div>
+                    <h3 class="project-title" data-i18n="p3_title">Video to Text Converter</h3>
+                    <p class="project-desc" data-i18n="p3_desc">A responsive web application that converts video audio
+                        into real-time text using speech recognition. Features include video uploads, live transcription
+                        generation, and a user-friendly transcript management interface.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">HTML</span>
+                        <span class="project-tag">CSS</span>
+                        <span class="project-tag">JavaScript</span>
+                        <!--<span class="project-tag">Speech API</span>-->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTERNSHIPS -->
+        <section id="internships">
+            <div class="section-header scroll-reveal">
+                <div class="section-eyebrow" data-i18n="s_int_eye">Experience</div>
+                <h2 class="section-title" data-i18n="s_internships">Internships</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-company">EduSkills</div>
+                        <div class="timeline-role" data-i18n="i1_role">Java Full Stack Intern</div>
+                        <div class="timeline-duration">Feb 2026 · 8 Weeks</div>
+                        <ul class="timeline-bullets">
+                            <li data-i18n="i1_b1">Covered HTML, CSS, Bootstrap, JavaScript, jQuery, Java, Spring Boot,
+                                MySQL, and Git
+                            </li>
+                            <li data-i18n="i1_b2">Built responsive frontend interfaces and backend applications using
+                                Spring Boot and
+                                MySQL</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-dot"
+                        style="background:var(--accent-2);box-shadow:0 0 15px rgba(236, 72, 153, 0.5);">
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-company" style="color:var(--accent-2)">Cognifyz Technologies</div>
+                        <div class="timeline-role" data-i18n="i2_role">Frontend Development Intern</div>
+                        <div class="timeline-duration">July 2025 · 5 Weeks</div>
+                        <ul class="timeline-bullets">
+                            <li data-i18n="i2_b1">Developed interactive, responsive web interfaces focusing on UI/UX
+                                best practices
+                            </li>
+                            <li data-i18n="i2_b2">Gained practical exposure to real-world frontend development workflows
+                                and tools
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section id="education">
+            <div class="section-header scroll-reveal">
+                <div class="section-eyebrow" data-i18n="s_edu_eye">Academic Background</div>
+                <h2 class="section-title" data-i18n="s_edu">Education</h2>
+                <div class="section-line"></div>
+            </div>
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; max-width: 1000px; margin: 0 auto;">
+                <div class="timeline-card scroll-reveal"
+                    style="display: flex; flex-direction: column; align-items: center; justify-content: space-between; gap: 20px; text-align: center; height: 100%;">
+                    <div>
+                        <div class="timeline-company" style="color: var(--accent-3);">Kamala Institute of Technology &
+                            Science, Huzurabad</div>
+                        <div class="timeline-role" data-i18n="edu_degree">B.Tech – Information Technology</div>
+                        <div class="timeline-duration">2023 – 2027</div>
+                    </div>
+                    <div
+                        style="background:rgba(20, 184, 166, 0.1); border:1px solid rgba(20, 184, 166, 0.2); border-radius:16px; padding:16px 24px; text-align:center; width: 100%;">
+                        <div
+                            style="font-family:'Outfit',sans-serif;font-size:32px;font-weight:800;color:var(--accent-3);">
+                            8.7</div>
+                        <div style="font-size:12px;color:var(--text-light);text-transform:uppercase;letter-spacing:0.1em;font-weight:700;"
+                            data-i18n="cgpa_label">CGPA / 10</div>
+                    </div>
+                </div>
+                <div class="timeline-card scroll-reveal"
+                    style="display: flex; flex-direction: column; align-items: center; justify-content: space-between; gap: 20px; text-align: center; height: 100%;">
+                    <div>
+                        <div class="timeline-company" style="color: var(--accent-1);">TS Model School & Govt. Jr.
+                            College (POCHAMPALLY)</div>
+                        <div class="timeline-role">Intermediate in MPC</div>
+                        <div class="timeline-duration">2021 – 2023</div>
+                    </div>
+                    <div
+                        style="background:rgba(99, 102, 241, 0.1); border:1px solid rgba(99, 102, 241, 0.2); border-radius:16px; padding:16px 24px; text-align:center; width: 100%;">
+                        <div
+                            style="font-family:'Outfit',sans-serif;font-size:32px;font-weight:800;color:var(--accent-1);">
+                            8.9</div>
+                        <div style="font-size:12px;color:var(--text-light);text-transform:uppercase;letter-spacing:0.1em;font-weight:700;"
+                            data-i18n="cgpa_label">CGPA / 10</div>
+                    </div>
+                </div>
+                <div class="timeline-card scroll-reveal"
+                    style="display: flex; flex-direction: column; align-items: center; justify-content: space-between; gap: 20px; text-align: center; height: 100%;">
+                    <div>
+                        <div class="timeline-company" style="color: var(--accent-2);">TS Model School & Govt. Jr.
+                            College (POCHAMPALLY)</div>
+                        <div class="timeline-role">Board of Secondary Education</div>
+                        <div class="timeline-duration">2020 – 2021</div>
+                    </div>
+                    <div
+                        style="background:rgba(236, 72, 153, 0.1); border:1px solid rgba(236, 72, 153, 0.2); border-radius:16px; padding:16px 24px; text-align:center; width: 100%;">
+                        <div
+                            style="font-family:'Outfit',sans-serif;font-size:32px;font-weight:800;color:var(--accent-2);">
+                            10</div>
+                        <div style="font-size:12px;color:var(--text-light);text-transform:uppercase;letter-spacing:0.1em;font-weight:700;"
+                            data-i18n="cgpa_label">CGPA / 10</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CERTIFICATES -->
+        <section id="certs">
+            <div class="section-header scroll-reveal">
+                <div class="section-eyebrow" data-i18n="s_cert_eye">Achievements</div>
+                <h2 class="section-title" data-i18n="s_certs">Certifications</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="certs-grid">
+                <!-- Replace '#' with path to your certificates like 'certs/java.jpg' if you want to link them -->
+                <a href="#" class="cert-card scroll-reveal" style="text-decoration: none; color: inherit;">
+                    <div class="cert-badge">🏆</div>
+                    <div>
+                        <div class="cert-name" data-i18n="c1">Programming in Java</div>
+                        <div class="cert-issuer">NPTEL</div>
+                    </div>
+                </a>
+                <a href="#" class="cert-card scroll-reveal" style="text-decoration: none; color: inherit;">
+                    <div class="cert-badge"
+                        style="color:var(--accent-3); background:rgba(20, 184, 166, 0.1); border-color:rgba(20, 184, 166, 0.2);">
+                        🎨
+                    </div>
+                    <div>
+                        <div class="cert-name" data-i18n="c2">HTML & CSS</div>
+                        <div class="cert-issuer">Let's Upgrade</div>
+                    </div>
+                </a>
+                <a href="#" class="cert-card scroll-reveal" style="text-decoration: none; color: inherit;">
+                    <div class="cert-badge"
+                        style="color:var(--accent-1); background:rgba(99, 102, 241, 0.1); border-color:rgba(99, 102, 241, 0.2);">
+                        ☕
+                    </div>
+                    <div>
+                        <div class="cert-name" data-i18n="c3">Java Programming</div>
+                        <div class="cert-issuer">Infosys Springboard</div>
+                    </div>
+                </a>
+                <a href="#" class="cert-card scroll-reveal" style="text-decoration: none; color: inherit;">
+                    <div class="cert-badge"
+                        style="color:var(--accent-2); background:rgba(236, 72, 153, 0.1); border-color:rgba(236, 72, 153, 0.2);">
+                        🌐
+                    </div>
+                    <div>
+                        <div class="cert-name" data-i18n="c4">Intro to Front End Development</div>
+                        <div class="cert-issuer">Simplilearn</div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- INTERESTS -->
+        <section id="interests">
+            <div class="section-header scroll-reveal">
+                <div class="section-eyebrow" data-i18n="s_int2_eye">Beyond Code</div>
+                <h2 class="section-title" data-i18n="s_interests">Interests & Activities</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="interests-grid">
+                <div class="interest-chip scroll-reveal">🛠️ <span data-i18n="in1">Building Web Projects</span></div>
+                <div class="interest-chip scroll-reveal">⚛️ <span data-i18n="in2">React & Tailwind CSS</span></div>
+                <div class="interest-chip scroll-reveal">📊 <span data-i18n="in3">Data Storytelling</span></div>
+                <div class="interest-chip scroll-reveal">🏆 <span data-i18n="in4">Hackathons & Tech Expos</span></div>
+                <div class="interest-chip scroll-reveal">🎤 <span data-i18n="in5">Public Speaking</span></div>
+                <div class="interest-chip scroll-reveal">📡 <span data-i18n="in6">Modern Frontend Frameworks</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <div class="section-header scroll-reveal">
+                <div class="section-eyebrow" data-i18n="s_con_eye">Let's Connect</div>
+                <h2 class="section-title" data-i18n="s_contact">Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-grid">
+                <a href="mailto:bandasamatha07@gmail.com" class="contact-card scroll-reveal">
+                    <div class="contact-icon" style="background: linear-gradient(135deg, var(--accent-1), #818cf8);">📧
+                    </div>
+                    <div>
+                        <div class="contact-label" data-i18n="con_email">Email</div>
+                        <div class="contact-value">bandasamatha07@gmail.com</div>
+                    </div>
+                </a>
+                <a href="tel:+919912816787" class="contact-card scroll-reveal">
+                    <div class="contact-icon" style="background: linear-gradient(135deg, var(--accent-3), #2dd4bf);">📱
+                    </div>
+                    <div>
+                        <div class="contact-label" data-i18n="con_phone">Phone</div>
+                        <div class="contact-value">+91 99128 16787</div>
+                    </div>
+                </a>
+                <a href="https://linkedin.com/in/samatha-banda-606649339" target="_blank"
+                    class="contact-card scroll-reveal">
+                    <div class="contact-icon" style="background: linear-gradient(135deg, #79b9dc, #00a0dc);">💼</div>
+                    <div>
+                        <div class="contact-label">LinkedIn</div>
+                        <div class="contact-value">Samatha Banda</div>
+                    </div>
+                </a>
+                <div class="contact-card scroll-reveal">
+                    <div class="contact-icon" style="background: linear-gradient(135deg, var(--accent-2), #f472b6);">📍
+                    </div>
+                    <div>
+                        <div class="contact-label" data-i18n="con_loc">Location</div>
+                        <div class="contact-value">Karimnagar, Telangana</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p data-i18n="footer">Designed & Built by <strong>Samatha Banda</strong> · B.Tech IT · KITS Huzurabad </p>
+    </footer>
+
+    <!-- External JS linked here -->
+    <script src="script.js"></script>
+</body>
+
+</html>
